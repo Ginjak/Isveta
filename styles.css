@@ -1,0 +1,102 @@
+:root {
+  /* Custom colors */
+  --melyna: #0b549b;
+  --pilka: #d9d9d9;
+  --balta: #fefefe;
+  --whitesmoke: #d9d9d9;
+  --juoda: #161415;
+  --pilka-slider: #dadada;
+  --melyna-btn: #0b55a0;
+  --raudona-btn: #ec3237;
+  --pilka-input: #ece8e7;
+}
+
+/* Utility styles (if any) */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--juoda);
+}
+
+/* Header styles */
+
+/* Top bar */
+#top-bar {
+  background: var(--melyna);
+  padding: 7px 0;
+}
+.top-bar-kontaktai,
+.projektai-kalba {
+  gap: 30px;
+}
+.top-bar-kontaktai a,
+.top-bar-kontaktai a:visited,
+.projektai-kalba a,
+.projektai-kalba a:visited {
+  font-size: 13px;
+  color: var(--balta);
+  gap: 5px;
+  transition: all 0.2s linear;
+}
+
+.top-bar-kontaktai a:hover,
+.projektai-kalba a:hover {
+  color: var(--pilka);
+  transition: all 0.2s linear;
+}
+.projektai-kalba .kalbos-dropdown {
+  display: none;
+  position: absolute;
+  top: 25px;
+  right: 0;
+}
+.projektai-kalba .kalbos-dropdown a {
+  color: var(--melyna);
+}
+
+.projektai-kalba .kalbos:hover .kalbos-dropdown {
+  display: block;
+}
+
+/* Navigation */
+.navbar-collapse.collapse {
+  width: 100%;
+}
+.navigation .dropdown-toggle::after {
+  display: none;
+}
+.navigation a {
+  color: var(--juoda);
+}
+.navigation i {
+  font-size: 10px;
+  color: var(--raudona-btn);
+}
+
+/* Media queries */
+
+@media (max-width: 540px) {
+  /* Header */
+  .top-bar-kontaktai,
+  .projektai-kalba {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  /* Header */
+  .top-bar-wraper {
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+  }
+}
