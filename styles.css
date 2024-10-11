@@ -8,7 +8,13 @@
   --pilka-slider: #dadada;
   --melyna-btn: #0b55a0;
   --raudona-btn: #ec3237;
+  --raudona-btn-hover: #c52b30;
   --pilka-input: #ece8e7;
+
+  /* Fonts */
+  --text-font: "Arial", "Helvetica", sans-serif;
+  --heading-font: "Arial", "Helvetica", sans-serif;
+  --button-font: "Arial", "Helvetica", sans-serif;
 }
 
 /* Utility styles (if any) */
@@ -22,9 +28,50 @@ ul {
   margin: 0;
 }
 
+.text-font {
+  font-family: var(--text-font);
+}
+
+.heading-font {
+  font-family: var(--heading-font);
+}
+
+.button-font {
+  font-family: var(--button-font);
+}
+
 .nav-link:focus,
 .nav-link:hover {
   color: var(--juoda);
+}
+
+.ls-05 {
+  letter-spacing: 0.05em;
+}
+.ls-1 {
+  letter-spacing: 0.1em;
+}
+.ls-125 {
+  letter-spacing: 0.125em;
+}
+
+.red-btn {
+  background: var(--raudona-btn);
+  color: var(--balta);
+  transition: all 0.2s linear;
+}
+.red-btn:hover {
+  transition: all 0.2s linear;
+  color: var(--balta);
+  background: var(--raudona-btn-hover);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: var(--juoda);
+  opacity: 0.4;
 }
 
 /* Header styles */
@@ -75,20 +122,79 @@ ul {
   display: none;
 }
 .navigation a {
-  color: var(--juoda);
+  color: var(--juoda) !important;
+  font-weight: 600;
 }
 .navigation i {
   font-size: 10px;
   color: var(--raudona-btn);
 }
 
+/* Main */
+
+/* Slider */
+#main-page-slider {
+  max-height: 620px;
+  min-height: 500px;
+}
+#main-page-slider .carousel-inner {
+  max-height: 620px;
+  min-height: 500px;
+}
+
+#main-page-slider .slider-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  min-height: 500px;
+}
+
+#main-page-slider .carousel-caption {
+  top: 23px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 325px;
+}
+
+#main-page-slider .slider-heading {
+  font-size: 32px;
+}
+
 /* Media queries */
+
+@media (max-width: 992px) {
+  #main-page-slider .slider-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main-page-slider .carousel-caption {
+    max-width: 325px;
+    width: 100%;
+  }
+
+  #main-page-slider .slider-heading {
+    font-size: 24px;
+  }
+}
 
 @media (max-width: 540px) {
   /* Header */
   .top-bar-kontaktai,
   .projektai-kalba {
     gap: 10px;
+  }
+
+  #main-page-slider .slider-heading {
+    font-size: 20px;
+  }
+  #main-page-slider .slider-btn-text {
+    font-size: 14px !important;
+  }
+  #main-page-slider .red-btn {
+    max-width: 250px;
   }
 }
 
