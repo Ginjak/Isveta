@@ -7,6 +7,7 @@
   --juoda: #161415;
   --pilka-slider: #dadada;
   --melyna-btn: #0b55a0;
+  --melyna-btn-hover: #0a4988;
   --raudona-btn: #ec3237;
   --raudona-btn-hover: #c52b30;
   --pilka-input: #ece8e7;
@@ -64,6 +65,17 @@ ul {
   transition: all 0.2s linear;
   color: var(--balta);
   background: var(--raudona-btn-hover);
+}
+
+.red-blue {
+  background: var(--melyna-btn);
+  color: var(--balta);
+  transition: all 0.2s linear;
+}
+.red-blue:hover {
+  background: var(--melyna-btn-hover);
+  color: var(--balta);
+  transition: all 0.2s linear;
 }
 
 .overlay {
@@ -218,11 +230,49 @@ ul {
   font-size: 32px;
 }
 
+/* Produktai section */
+
+.produktai-section {
+  background: var(--pilka-input);
+}
+
+.produktai-section .producto-card {
+  min-height: 300px;
+  background: var(--pilka);
+  border-radius: 25px;
+  overflow: hidden;
+}
+.produktai-section .el-pard-heading {
+  max-width: 280px;
+}
+
+.produkto-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: right center;
+  border-radius: 25px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 /* Media queries */
 
+@media (max-width: 1200px) {
+  .produktai-section .el-pard-heading {
+    font-size: 26px;
+  }
+}
 @media (max-width: 992px) {
   #main-page-slider .slider-heading {
     font-size: 28px;
+  }
+  .produktai-section .el-pard-heading {
+    max-width: 100%;
+  }
+
+  .produktai-section .el-pard-heading {
+    font-size: 24px;
   }
 }
 
@@ -234,6 +284,9 @@ ul {
 
   #main-page-slider .slider-heading {
     font-size: 24px;
+  }
+  .produktai-section .el-pard-heading {
+    font-size: 22px;
   }
 }
 
@@ -247,11 +300,15 @@ ul {
   #main-page-slider .slider-heading {
     font-size: 20px;
   }
-  #main-page-slider .slider-btn-text {
+  .slider-btn-text {
     font-size: 14px !important;
   }
   #main-page-slider .red-btn {
     max-width: 250px;
+  }
+
+  .produktai-section .el-pard-heading {
+    font-size: 18px;
   }
 }
 
