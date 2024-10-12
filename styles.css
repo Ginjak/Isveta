@@ -336,6 +336,9 @@ ul {
   .patirtis-heading {
     font-size: 26px;
   }
+  .main-banner-patirtis .patirtis-txt {
+    font-size: 22px;
+  }
 }
 @media (max-width: 992px) {
   #main-page-slider .slider-heading {
@@ -349,6 +352,9 @@ ul {
   .meistras-heading,
   .patirtis-heading {
     font-size: 24px;
+  }
+  .main-banner-patirtis .patirtis-txt {
+    max-width: 220px;
   }
 }
 
@@ -365,6 +371,9 @@ ul {
   .meistras-heading,
   .patirtis-heading {
     font-size: 22px;
+  }
+  .main-banner-patirtis .patirtis-txt {
+    font-size: 18px;
   }
 }
 
