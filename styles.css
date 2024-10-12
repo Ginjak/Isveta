@@ -3,7 +3,6 @@
   --melyna: #0b549b;
   --pilka: #d9d9d9;
   --balta: #fefefe;
-  --whitesmoke: #d9d9d9;
   --juoda: #161415;
   --juoda-hover: #584d54;
   --pilka-slider: #dadada;
@@ -327,6 +326,24 @@ ul {
 .bottom-banner-patirtis {
   height: 30px;
   background: var(--melyna);
+}
+
+/* Footer */
+footer {
+  background: var(--pilka);
+}
+
+.footer-links a {
+  color: var(--juoda);
+  transition: color 0.2s linear;
+}
+.footer-links li:hover a {
+  color: var(--juoda-hover);
+  transition: color 0.2s linear;
+}
+
+.footer-links a:visited {
+  color: var(--juoda);
 }
 /* Media queries */
 
