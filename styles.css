@@ -261,6 +261,29 @@ ul {
   left: 0;
 }
 
+/* Produktai section (carousel) */
+
+.single-slide {
+  min-height: 600px;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  color: var(--juoda);
+  font-size: 46px;
+}
+
+.swiper-button-prev {
+  left: -20px;
+}
+.swiper-button-next {
+  right: -20px;
+}
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  display: none;
+}
+
 /* Kontaktai section */
 
 .kontaktai-section .form-wraper {
@@ -363,9 +386,21 @@ footer {
 }
 /* Media queries */
 
+@media (max-width: 1400px) {
+  .category-carousel > div {
+    padding: 0 50px;
+  }
+  .swiper-button-prev {
+    left: 10px;
+  }
+  .swiper-button-next {
+    right: 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .produktai-section .el-pard-heading,
-  .meistras-heading,
+  .h2-heading,
   .patirtis-heading {
     font-size: 26px;
   }
@@ -382,7 +417,7 @@ footer {
   }
 
   .produktai-section .el-pard-heading,
-  .meistras-heading,
+  .h2-heading,
   .patirtis-heading {
     font-size: 24px;
   }
@@ -401,7 +436,7 @@ footer {
     font-size: 24px;
   }
   .produktai-section .el-pard-heading,
-  .meistras-heading,
+  .h2-heading,
   .patirtis-heading {
     font-size: 22px;
   }
@@ -428,7 +463,7 @@ footer {
   }
 
   .produktai-section .el-pard-heading,
-  .meistras-heading,
+  .h2-heading,
   .patirtis-heading {
     font-size: 18px;
   }
