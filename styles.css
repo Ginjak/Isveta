@@ -323,9 +323,21 @@ ul {
   font-size: 26px;
 }
 
-.bottom-banner-patirtis {
+.footer-top,
+.footer-bottom {
   height: 30px;
   background: var(--melyna);
+}
+.footer-bottom a {
+  color: var(--balta);
+  transition: color 0.2s linear;
+}
+.footer-bottom a:visited {
+  color: var(--balta);
+}
+.footer-bottom a:hover {
+  color: var(--pilka);
+  transition: color 0.2s linear;
 }
 
 /* Footer */
@@ -337,6 +349,10 @@ footer {
   color: var(--juoda);
   transition: color 0.2s linear;
 }
+.footer-links a.text-decoration-underline {
+  text-underline-offset: 2px;
+}
+
 .footer-links li:hover a {
   color: var(--juoda-hover);
   transition: color 0.2s linear;
