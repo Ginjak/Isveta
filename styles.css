@@ -467,6 +467,16 @@ footer {
   .patirtis-heading {
     font-size: 18px;
   }
+
+  .category-carousel > div {
+    padding: 0 12px;
+  }
+  .swiper-button-prev {
+    display: none;
+  }
+  .swiper-button-next {
+    display: none;
+  }
 }
 
 @media (max-width: 400px) {
