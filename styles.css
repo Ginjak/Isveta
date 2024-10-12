@@ -90,6 +90,49 @@ ul {
   opacity: 0.4;
 }
 
+.meistro-iskvietimas-btn {
+  position: relative;
+  font-size: 8px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  background: var(--raudona-btn);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  transition: background 0.2s linear;
+}
+.meistro-iskvietimas-btn:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  width: 7px;
+  height: 7px;
+  background: var(--raudona-btn);
+  transition: background 0.2s linear;
+}
+
+.meistro-iskvietimas-btn:hover,
+.meistro-iskvietimas-btn:hover:before {
+  background: var(--raudona-btn-hover);
+  transition: background 0.2s linear;
+}
+
+.meistro-iskvietimas-btn a {
+  max-width: 80%;
+  color: var(--balta);
+}
+
+.chat-wraper {
+  position: fixed;
+  z-index: 1000;
+  width: 50px;
+  height: 50px;
+  bottom: 40px;
+  right: 40px;
+}
 /* Header styles */
 
 /* Top bar */
@@ -264,7 +307,7 @@ ul {
 /* Produktai section (carousel) */
 
 .single-slide {
-  min-height: 600px;
+  min-height: 500px;
 }
 
 .swiper-button-prev,
@@ -384,6 +427,8 @@ footer {
 .footer-links a:visited {
   color: var(--juoda);
 }
+
+/*  */
 /* Media queries */
 
 @media (max-width: 1400px) {
@@ -442,6 +487,11 @@ footer {
   }
   .main-banner-patirtis .patirtis-txt {
     font-size: 18px;
+  }
+
+  .single-slide {
+    min-height: auto;
+    height: 450px;
   }
 }
 
