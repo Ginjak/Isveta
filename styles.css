@@ -92,7 +92,7 @@ ul {
 
 .meistro-iskvietimas-btn {
   position: relative;
-  font-size: 8px;
+  font-size: 9px;
   width: 70px;
   height: 70px;
   border-radius: 50px;
@@ -404,6 +404,158 @@ ul {
 .footer-bottom a:hover {
   color: var(--pilka);
   transition: color 0.2s linear;
+}
+
+/* ------------------
+      Produktas
+   ------------------ */
+
+.pirkti-btn {
+  border: none;
+  background: var(--raudona-btn);
+  color: var(--balta);
+  border-radius: 12px;
+  padding: 8px 32px;
+  transition: background 0.2s linear;
+}
+.pirkti-btn:hover {
+  background: var(--raudona-btn-hover);
+  transition: background 0.2s linear;
+}
+.divider {
+  height: 2px;
+  width: 100%;
+  background: var(--pilka);
+}
+
+.spalva {
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: border 0.2s linear;
+  cursor: pointer;
+  transition: box-shadow 0.2s linear;
+}
+.spalva:hover {
+  box-shadow: 0px 0 0px 2px var(--juoda-hover);
+  transition: box-shadow 0.2s linear;
+}
+.pilka {
+  background: #f3f3f3;
+}
+.gelsva {
+  background: #dfdbae;
+}
+.zalsva {
+  background: #cedab4;
+}
+.zalia {
+  background: #7c908e;
+}
+
+.product-subtitle {
+  color: var(--melyna);
+}
+#product-details label,
+#product-details p.form-label {
+  margin-bottom: 0;
+  display: flex;
+  align-items: center;
+}
+#product-details .form-select,
+#product-details .form-control {
+  border-radius: 4px;
+  border-color: var(--melyna);
+  max-width: 330px;
+  width: 100%;
+}
+
+#product-details .form-control {
+  padding-right: 32px;
+}
+
+#product-details .form-select:focus,
+#product-details .form-control:focus {
+  box-shadow: 0 0 0 2px rgb(13, 76, 172);
+}
+
+#product-details .form-control::placeholder {
+  color: var(--juoda);
+}
+
+#product-details .form-check-label {
+  cursor: pointer;
+  padding-top: 6px;
+}
+#product-details .form-check-label input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  width: 0;
+  height: 0;
+}
+
+#product-details .form-check-label .checkmark {
+  position: absolute;
+  top: 6px;
+  left: 0;
+  height: 24px;
+  width: 24px;
+  border: 1px solid var(--melyna);
+  background: var(--balta);
+  border-radius: 4px;
+}
+
+#product-details input[type="checkbox"]:checked ~ .checkmark {
+  background-color: var(--melyna);
+}
+
+#product-details .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+#product-details input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+}
+#product-details .checkmark:after {
+  left: 9px;
+  top: 3px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
+.product-gallery {
+  text-align: center;
+}
+
+.main-image img {
+  width: 500px;
+  height: auto;
+  border: 2px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.thumbnails {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.thumbnails img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: border-color 0.3s;
+}
+
+.thumbnails img:hover {
+  border-color: #000;
 }
 
 /* Footer */

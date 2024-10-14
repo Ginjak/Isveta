@@ -28,3 +28,7 @@ const swiper = new Swiper(".swiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+function updateMainImage(src) {
+  document.getElementById("mainImage").src = src;
+}

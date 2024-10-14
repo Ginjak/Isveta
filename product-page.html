@@ -9,12 +9,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
-    <link
-  rel="stylesheet"
-  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-/>
     <link rel="stylesheet" href="styles.css" />
-    <title>Isveta</title>
+    <title>Isveta - produkta</title>
   </head>
   <body>
     <!-- Header - pradzia -->
@@ -320,246 +316,170 @@
     <!-- Header - pabaiga -->
     <!-- Main content pradzia-->
     <main>
-      <!-- Slider pradzia -->
-      <div id="main-page-slider" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#main-page-slider"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#main-page-slider"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#main-page-slider"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item position-relative active">
-            <div class="overlay"></div>
-            <img
-              src="./Slide_image_1.webp"
-              class="slider-img"
-              alt="slide-image"
-            />
-            <div
-              class="carousel-caption d-flex flex-column justify-content-center align-items-center gap-3 px-2"
-            >
-              <h5
-                class="slider-heading text-uppercase fw-bold heading-font ls-05 lh-sm"
-              >
-                Lauko žaliuzės garažo vartai ir daugiau
-              </h5>
-              <a
-                href="#"
-                class="btn red-btn rounded-pill slider-btn-text text-uppercase fw-bolder button-font ls-05 lh-sm"
-                >Nemokamas meistro iškvietimas</a
-              >
-              <p class="fs-6">
-                Trumpas tekstas apie žaliuzės roletus ir tinklelius.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="./Slide_image_1.webp"
-              class="slider-img"
-              alt="slide-image"
-            />
-            <div
-              class="carousel-caption d-flex flex-column justify-content-center align-items-center gap-3 px-2"
-            >
-              <h5
-                class="slider-heading text-uppercase fw-bold heading-font ls-05 lh-sm"
-              >
-                Lauko žaliuzės garažo vartai ir daugiau
-              </h5>
-              <a
-                href="#"
-                class="btn red-btn rounded-pill slider-btn-text text-uppercase fs-6 fw-bolder button-font ls-05 lh-sm"
-                >Nemokamas meistro iškvietimas</a
-              >
-              <p class="fs-6">
-                Trumpas tekstas apie žaliuzės roletus ir tinklelius.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item position-relative">
-            <div class="overlay"></div>
-            <img
-              src="./Slide_image_1.webp"
-              class="slider-img"
-              alt="slide-image"
-            />
-            <div
-              class="carousel-caption d-flex flex-column justify-content-center align-items-center gap-3 px-2"
-            >
-              <h5
-                class="slider-heading text-uppercase fw-bold heading-font ls-05 lh-sm"
-              >
-                Lauko žaliuzės garažo vartai ir daugiau
-              </h5>
-              <a
-                href="#"
-                class="btn red-btn rounded-pill slider-btn-text text-uppercase fs-6 fw-bolder button-font ls-05 lh-sm"
-                >Nemokamas meistro iškvietimas</a
-              >
-              <p class="fs-6">
-                Trumpas tekstas apie žaliuzės roletus ir tinklelius.
-              </p>
-            </div>
-          </div>
-        </div>
-        <!-- <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#main-page-slider"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#main-page-slider"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button> -->
-      </div>
-      <!-- Slider pabaiga -->
-      <!-- Apsilankyti el. parduotuveje section pradzia -->
-      <div class="produktai-section py-5">
+      <div class="product">
         <div class="container-xxl">
-          <div class="row d-flex flex-column flex-lg-row">
-            <div class="col-12 col-lg-9">
-              <div class="row row-cols-1 row-cols-sm-3 g-md-3 g-4 g-xl-5">
-                <div class="col">
-                  <div
-                    class="producto-card d-flex justify-content-center align-items-center position-relative"
-                  >
-                    <img
-                      src="./produktas_1.webp"
-                      alt="produktas"
-                      class="produkto-img"
-                    />
-                  </div>
+          <div class="product-image-details-wraper pt-5">
+            <div class="row g-4">
+            <div class="col-7">
+             
+              <div class="product-gallery">
+                <div class="main-image ">
+                  <img id="mainImage" src="aaa.jpeg" alt="Product Image" class="fade show">
+                  
                 </div>
-                <div class="col">
-                  <div
-                    class="producto-card d-flex justify-content-center align-items-center position-relative"
-                  >
-                    <img
-                      src="./produktas_1.webp"
-                      alt="produktas"
-                      class="produkto-img"
-                    />
-                  </div>
-                </div>
-                <div class="col">
-                  <div
-                    class="producto-card d-flex justify-content-center align-items-center position-relative"
-                  >
-                    <img
-                      src="./produktas_1.webp"
-                      alt="produktas"
-                      class="produkto-img"
-                    />
-                  </div>
+                <div class="thumbnails">
+                  <img class="thumbnail" src="aaa.jpeg" alt="Thumbnail 1" onclick="updateMainImage('aaa.jpeg')">
+                  <img class="thumbnail" src="logo.png" alt="Thumbnail 2" onclick="updateMainImage('logo.png')">
+                  <img class="thumbnail" src="screen_1.png" alt="Thumbnail 3" onclick="updateMainImage('screen_1.png')">
+                  
                 </div>
               </div>
+              
+
+
             </div>
-            <div
-              class="py-4 py-lg-0 col-lg-3 d-flex flex-column align-items-lg-end align-items-center justify-content-between gap-3 gap-lg-0"
-            >
-              <h3
-                class="heading-font text-lg-end text-center text-uppercase fw-bolder el-pard-heading"
-              >
-                Apsilankyk mūsų el. parduotuvėje ir išsirink tai, kas tinka tavo
-                namams el. parduotuvėje
-              </h3>
-              <div>
-                <a
-                  href="#"
-                  class="btn red-blue rounded-pill text-uppercase fw-bolder button-font ls-05 lh-sm px-5 slider-btn-text"
-                  >Pamatyti viską</a
-                >
+
+
+
+
+            <div class="col-5">
+              <h3 class="heading-font fw-bold ls-05 patirtis-heading  position-relative mb-1">Prekės pavadinimas</h3>
+              <p class="text-font fw-bold product-subtitle">Kategorija | Ir kita</p>
+              <div class="divider mb-3"></div>
+         
+            
+            <form id="product-details" class="d-flex flex-column gap-3">
+              <div class="product-select d-flex ">               
+                <label for="prekes-pasirinkimas-vienas" class="form-label col">Prekės pasirinkimas 1</label>                   
+                <select class="form-select col" id="prekes-pasirinkimas-vienas">
+                  <option value="1">Pasirinkimas 1</option>
+                  <option value="2">Pasirinkimas 2</option>
+                  <option value="3">Pasirinkimas 3</option>
+                </select>
+              
               </div>
-            </div>
+              <div class="product-select d-flex ">               
+                <label for="prekes-pasirinkimas-du" class="form-label col">Prekės pasirinkimas 2</label>                   
+                <select class="form-select col" id="prekes-pasirinkimas-du">
+                  <option value="1">Pasirinkimas 1</option>
+                  <option value="2">Pasirinkimas 2</option>
+                  <option value="3">Pasirinkimas 3</option>
+                </select>          
+              </div>
+
+              <div class="product-input d-flex ">               
+                <label for="audinio-plotis" class="form-label col">Audinio plotis, mm</label>                   
+                <input
+                  type="number"
+                  class="form-control col"
+                  id="audinio-plotis"
+                  placeholder="min.: 150/ maks.:1700"/>
+              </div>
+              <div class="product-input d-flex ">               
+                <label for="plotis" class="form-label col">Plotis, mm</label>                   
+                <input
+                  type="number"
+                  class="form-control col"
+                  id="plotis"
+                  placeholder="min.: 150/ maks.:1700"/>
+              </div>
+              <div class="product-input d-flex ">               
+                <label for="aukstis" class="form-label col">Aukštis, mm</label>                   
+                <input
+                  type="number"
+                  class="form-control col"
+                  id="aukstis"
+                  placeholder="min.: 150/ maks.:1700"/>
+              </div>
+              <div class="product-select d-flex ">               
+                <label for="stiklajuostes-gylis" class="form-label col">Stiklajuostės gylis, mm</label>                   
+                <select class="form-select col" id="stiklajuostes-gylis">
+                  <option value="1">Pasirinkimas 1</option>
+                  <option value="2">Pasirinkimas 2</option>
+                  <option value="3">Pasirinkimas 3</option>
+                </select>          
+              </div>
+              <div class="product-input d-flex my-3">               
+                <p class="form-label col">Audinys</p>  
+                <div class="col d-flex gap-4">
+                  <div class="spalva pilka"></div>
+                  <div class="spalva gelsva"></div>
+                  <div class="spalva zalsva"></div>
+                  <div class="spalva zalia"></div>
+                </div>                 
+              </div>
+
+              <div class="product-select d-flex ">               
+                <label for="valdymas" class="form-label col">Valdymas</label>                   
+                <select class="form-select col" id="valdymas">
+                  <option value="1">Pasirinkimas 1</option>
+                  <option value="2">Pasirinkimas 2</option>
+                  <option value="3">Pasirinkimas 3</option>
+                </select>          
+              </div>
+
+              <div class="product-input d-flex my-3">               
+                <p class="form-label col">Audinys</p>  
+                <div class="col d-flex gap-4">
+                  <div class="spalva zalia"></div>
+                  <div class="spalva zalsva"></div>
+                  <div class="spalva gelsva"></div>
+                  <div class="spalva pilka"></div>
+                </div>                  
+              </div>
+
+              <div class="product-input d-flex ">               
+                <label for="aukstis" class="form-label col">Pastaba</label>                   
+                <input
+                  type="text"
+                  class="form-control col"
+                  id="aukstis"
+                  placeholder=""/>
+              </div>
+              <div class="checkbox-button-wraper d-flex justify-content-between">
+                <div class="position-relative">
+                  <label class="form-check-label  ps-5" for="paskaiciuoti-kaina">
+                    Paskaičiuoti kainą
+                    <input class="form-check-input" type="checkbox" value="" id="paskaiciuoti-kaina">
+                    <span class="checkmark"></span>
+                  </label>
+                </div>
+                <button class="pirkti-btn  fw-bolder text-uppercase ls-05 lh-sm px-4">Pirkti</button>
+              </div>
+            </form>  
+          </div>
+          </div>
+          <div class="informacija">
+          <p class="product-subtitle fw-bold">Informacija</p>
+          <div class="divider mb-3"></div>
+          <p>Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br>
+
+            1. Sudedamosios dalys: audinys, aliuminio vamzdis (18 mm), aliumininė kasetė, šoniniai dangteliai, audinys, apatinis svarelis, aliumininė kreipiančioji ir valdymo
+            mechanizmas.<br>
+            
+            2. Roletų maksimalus plotis - 1600 mm, o maksimalus aukštis iki 2500 mm. Šie parametrai yra ribojami priklausomai nuo pasirinkto audinio. Esant dideliam aukščiui
+            ne su visais audiniais galimas pilnas suvyniojimas į kasetę.<br>
+            
+            3. Tvirtinimo galimybės: varžtelių pagalba kasetė prisukama prie lango rėmo stiklajuosčių. Kreipiančiosios specialia dvipusio lipimo juosta yra klijuojamos ant šoninių
+            lango rėmo stiklajuosčių.<br>
+            
+            4. Garantija 24 mėnesiai.</p>
+        </div>
+        <div class="aprasymas">
+          <p class="product-subtitle fw-bold">Aprašymas</p>
+          <div class="divider mb-3"></div>
+          <p>Pagaminame nuo 2 iki 4 darbo dienų (be pristatymo).<br>
+
+            Gali būti pritaikyti įvairių tipų langams (tinkami tiek plastikiniams, tiek mediniams). Audinys susisuka ant vamzdžio, kuris yra uždengtas aliuminine kasete. Specialios aliumininės juostos (kreipiančiosios) išlaiko audinį prigludusį prie lango stiklo, kai jis yra atidaromas ar atverčiamas vėdinimui. Visos detalės yra pagamintos iš itin
+            kokybiškų ir patvarių medžiagų.</p>
+        </div>
+
+
           </div>
         </div>
       </div>
-      <!-- Apsilankyti el. parduotuveje section pabaiga -->
-
-      <!-- Category carousel pradzia -->
-       <div class="category-carousel pt-5">
-        <div class="container-xxl position-relative ">
-        <h2 class="heading-font heading-font text-uppercase fw-bold ls-05 h2-heading text-center text-lg-start mb-5">Paslaugos ir prekės</h2>
-
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide d-flex flex-column gap-4">
-            <div class=" single-slide position-relative">
-              <img src="./garazo_vartai.webp" alt="produkto-kategorija" class="produkto-img">
-              
-            </div>
-            <a href="#" class="btn red-blue rounded-pill fw-bolder button-font ls-05 lh-sm py-2 slider-btn-text w-100">Garažo Vartai</a>
-          </div>
-          <div class="swiper-slide d-flex flex-column gap-4">
-            <div class=" single-slide position-relative">
-              <img src="./produktas_1.webp" alt="produkto-kategorija" class="produkto-img">
-              
-            </div>
-            <a href="#" class="btn red-blue rounded-pill fw-bolder button-font ls-05 lh-sm py-2 slider-btn-text w-100">Automatika ir Priedai</a>
-          </div>
-          <div class="swiper-slide d-flex flex-column gap-4">
-            <div class=" single-slide position-relative">
-              <img src="./aaa.jpeg" alt="produkto-kategorija" class="produkto-img">
-              
-            </div>
-            <a href="#" class="btn red-blue rounded-pill fw-bolder button-font ls-05 lh-sm py-2 slider-btn-text w-100">Roletai</a>
-          </div>
-          <div class="swiper-slide d-flex flex-column gap-4">
-            <div class=" single-slide position-relative">
-              <img src="./garazo_vartai.webp" alt="produkto-kategorija" class="produkto-img">
-              
-            </div>
-            <a href="#" class="btn red-blue rounded-pill fw-bolder button-font ls-05 lh-sm py-2 slider-btn-text w-100">Garažo Vartai</a>
-          </div>
-          <div class="swiper-slide d-flex flex-column gap-4">
-            <div class=" single-slide position-relative">
-              <img src="./garazo_vartai.webp" alt="produkto-kategorija" class="produkto-img">
-              
-            </div>
-            <a href="#" class="btn red-blue rounded-pill fw-bolder button-font ls-05 lh-sm py-2 slider-btn-text w-100">Garažo Vartai</a>
-          </div>
-          
-        </div>
-     
-
-        
-      </div>
-      <div class="swiper-button-prev"><i class="fa-solid fa-chevron-left"></i></div>
-      <div class="swiper-button-next"><i class="fa-solid fa-chevron-right"></i></div>
-
-    </div>
-  </div>
-      
-
-      <!-- Category carousel pabaiga -->
+      <!-- Product info pradzia -->
+      <!-- Product info pabaiga -->
       <!-- Contact form section pradzia -->
       <div class="kontaktai-section py-5">
         <div class="container-xxl">
@@ -628,21 +548,7 @@
         </div>
       </div>
       <!-- Contact form section pabaiga -->
-      <!-- Dirba visoje lietuvoje section pradzia -->
-      <div class="visoje-lietuvoje-section py-5">
-        <div class="container-xxl">
-          <h2
-            class="heading-font text-uppercase fw-bold ls-05 h2-heading text-center text-lg-start"
-          >
-            Dirbame visoje Lietuvoje
-          </h2>
-          <p class="text-font fw-bolder text-center text-lg-start">
-            Visų gaminių matavimo ir montavimo darbus vykdome visoje Lietuvoje.
-            Matavimą ir sąmatos pateikimą atliekame nemokamai
-          </p>
-        </div>
-      </div>
-      <!-- Dirba visoje lietuvoje section pabaiga -->
+
       <!-- Patirtis section pradzia -->
       <div class="patirtis-section">
         <div class="top-banner-patirtis py-3 py-sm-2">
@@ -695,7 +601,7 @@
               >
                 Jau 25 metus dirbame žaliuzių ir garažo vartų srityje!
               </h2>
-              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+              <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-0">
                 <div class="col d-flex flex-column align-items-center">
                   <p class="patirtis-skaicius fw-bold lh-1">25</p>
                   <span
@@ -1041,15 +947,27 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script
       src="https://kit.fontawesome.com/8576b8686b.js"
       crossorigin="anonymous"
     ></script>
-    <script
-      src="./script.js"
-      
-    ></script>
+    <script>
+function updateMainImage(src) {
+  const mainImage = document.getElementById('mainImage');
+  
+  // Add fade-out effect
+  mainImage.classList.remove('show');
+  
+  // Wait for the fade-out transition to complete
+  setTimeout(() => {
+    mainImage.src = src;
+    
+    // Add fade-in effect
+    mainImage.classList.add('show');
+  }, 100); // This should match the duration of the CSS transition
+}
+
+    </script>
 
   </body>
 </html>
